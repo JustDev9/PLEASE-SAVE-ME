@@ -18,7 +18,7 @@ $dbase = new connection();
 $pdo = $dbase->connect();
 $crud = new Crud_model($pdo);
 
-$data = json_decode(file_get_contents("php://input"), true);
+$data = json_decode(file_get_contents("php://input"), );
 $req = [];
 
 if (isset($_REQUEST['request'])) {
